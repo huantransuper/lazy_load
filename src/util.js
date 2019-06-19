@@ -45,7 +45,7 @@ function getBestSelectionFromSrcset (el, scale) {
   let options = el.getAttribute('data-srcset')
   const result = []
   const container = el.parentNode
-  const containerWidth = container.offsetWidth * scale
+  const containerWidth = window.innerWidth * scale
 
   let spaceIndex
   let tmpSrc
